@@ -9,21 +9,41 @@
 .container {
     display: flex;
     justify-content: space-between;
+
 }
  
 
 .nav {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.navitem {
-    height: 100%;
-    padding-top: 15%;
+.nav_links {
+    height:fit-content;
     text-decoration: none;
-    border: #0065FC solid;
+    display: flex;
+    height: 100%;
 
 }
-.navitem:hover {
+.nav_links:hover {
     border-top: #0065FC solid;
+    height: 100%;
+}
+
+span {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+span:hover {
+    color: #0065FC;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
 }
