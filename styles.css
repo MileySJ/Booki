@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.navitem {
+    height: 100%;
+    padding-top: 15%;
+    text-decoration: none;
+    border: #0065FC solid;
+
+}
+.navitem:hover {
+    border-top: #0065FC solid;
+}
