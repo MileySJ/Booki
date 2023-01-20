@@ -80,7 +80,7 @@ span {
 /* text section CSS*/
 
 .title {
-    margin: 0 5%;
+    margin: 0 5% 2% 5%;
     line-height: 0.6
 }
 
@@ -109,4 +109,8 @@ span {
 /* search bar CSS*/
 
 
-
+input::placeholder {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding-left: 4%;
+}
