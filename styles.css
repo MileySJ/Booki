@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    color: black;
 
 }
 
@@ -20,6 +19,7 @@ header {
 .nav_links {
     display: flex;
     text-decoration: none;
+    color: black;
 }
 
 .nav_links:hover {
@@ -52,20 +52,20 @@ span {
 
     header {
         display: block;
-        margin: 0 0 10% 0;
+        margin: 0 0 7% 0;
         }
 
     .nav {
         justify-content: center;
         }
     .nav_links {
-        border-bottom: #F2F2F2 solid;
+        border-bottom: 3px #F2F2F2 solid;
         width: 100%;
         justify-content: center;
-        padding: 2%;
+        padding: 3%;
         }
     .nav_links:hover {
-        border-bottom: #0065FC solid;
+        border-bottom: 3px #0065FC solid;
         border-top: none;
         color: #0065FC;
     }
@@ -80,7 +80,7 @@ span {
 /* text section CSS*/
 
 .title {
-    margin: 0 5% 2% 5%;
+    margin: 0 5% 5% 5%;
     line-height: 0.6
 }
 
@@ -97,6 +97,9 @@ span {
 }
 
 @media all and (max-width: 767px) {
+    .title{
+        margin-bottom: 10%;
+    }
     .lg-text {
         font-size:x-large;
         font-weight: 600;
@@ -108,9 +111,74 @@ span {
 
 /* search bar CSS*/
 
+.search-bar {
+    position: relative;
+    margin: 0% 5% 5% 5%;
+    border: transparent;
+}
 
-input::placeholder {
+.search-bar-contents {
+    position: absolute;
+    display: flex;
+}
+
+.search-bar-icon {
+    padding: 5% 6%;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search-bar-input {
+    border-left: none;
+    border-right: none;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    outline: none;
+    padding: 0% 5%;
     font-weight: 600;
-    color: rgb(0, 0, 0);
-    padding-left: 4%;
+}
+ .search-bar-input::placeholder {
+    color: black;
+    font-weight: 600;
+    opacity: 1;
+ }
+
+.search-bar-bg-button {
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 600;
+    padding: 0% 5%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+    .search-bar-sm-button{
+        display: none;
+    }
+
+@media all and (max-width: 767px) {
+
+    .search-bar-contents {
+        width: 100%;
+    }
+
+    .search-bar-input {
+        width: 100%;
+    }
+
+    .search-bar-bg-button {
+        display: none;
+    }
+
+    .search-bar-sm-button {
+        display: block;
+        border: none;
+        background-color: #0065FC;
+        color: white;
+        font-weight: 600;
+        padding: 0% 5%;
+        border-radius: 15px;
+    }
 }
