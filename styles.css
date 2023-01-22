@@ -117,8 +117,7 @@ span {
     border: transparent;
 }
 
-.search-bar-contents {
-    border-radius: 15px;
+.search-bar-contents {    border-radius: 15px;
     position: absolute;
     display: flex;
 }
