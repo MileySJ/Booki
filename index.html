@@ -26,8 +26,8 @@
             <img class="logo-image" src="images/Booki.png" alt="booki's logo" title="booki's logo">
         </div>
         <div class="nav">
-            <a class="nav_links" href="#"><span>Accommodations</span></a>
-            <a class="nav_links" href="#"><span>Activities</span></a>
+            <a class="nav_links" href="#"><span class="nav-span">Accommodations</span></a>
+            <a class="nav_links" href="#"><span class="nav-span">Activities</span></a>
         </div>
     </header>
     
@@ -39,17 +39,94 @@
 
     <!-- search bar -->
     <div class="search-bar">
-    <div class="search-bar-contents">
         <div class="search-bar-icon">
             <i class="fa-sharp fa-solid fa-location-dot"></i>
         </div>
 
-            <input type="input" class="search-bar-input" placeholder="Marseille, France">
+        <input type="search" class="search-bar-input" placeholder="Marseille, France">
 
-            <button class="search-bar-bg-button">Search</button>
-            <button class="search-bar-sm-button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        <button class="search-bar-bg-button">Search</button>
+        <button class="search-bar-sm-button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
     </div>
-</div>
+
+    <!-- Filters -->
+    <div class="filters-section">
+
+        <!--filter title-->
+        <div class="filters-text">
+            <span>Filters</span>
+        </div>
+
+        <!--switch-->
+        <div class="filters">
+
+            <!--first-filter-->
+            <div class="all-filters" id="filter-1">
+
+                <div class="filter-icon-section">
+                <i class="fa-sharp fa-solid fa-money-bill-wave" style="color: #0065FC;"></i>
+                </div>
+
+                <div>
+                    <p class="filter-text">Low cost</p>
+                </div>
+
+            </div>
+
+            <!--second filter-->
+            
+            <div class="all-filters" id="filter-2">
+
+                <div class="filter-icon-section">
+                <i class="fa-solid fa-child-reaching" style="color: #0065FC;"></i>
+                </div>
+
+                <div>
+                    <p class="filter-text">Family-friendly</p>
+                </div>
+
+            </div>
+
+           
+
+            <!-- third filter-->
+            <div class="all-filters" id="filter-3">
+
+                <div class="filter-icon-section">
+                <i class="fa-sharp fa-solid fa-heart" style="color: #0065FC;"></i>
+                </div>
+
+                <div>
+                    <p class="filter-text">Romantic</p>
+                </div>
+            </div>
+           
+            <!-- fourth filter-->
+            <div class="all-filters" id="filter-4">
+
+                <div class="filter-icon-section">
+                <i class="fa-solid fa-dog" style="color: #0065FC;"></i>
+                </div>
+
+                <div>
+                    <p class="filter-text">Pets allowed</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Info text-->
+    <div class="info-section">
+
+        <div>
+            <i id="info-icon" class="fa-solid fa-info fa-sm"></i>
+        </div>
+
+        <div class="info-text">
+            <span>More than 500 accommodations are available in this city</span>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin: 0% 5% 5% 5%;
+    margin: 0% 5% 3% 5%;
 }
  
 .nav {
@@ -27,7 +27,7 @@ header {
     color: #0065FC;
 }
 
-span {
+.nav-span {
     padding: 0px 15px;
     display: flex;
     align-items: flex-end;
@@ -80,7 +80,7 @@ span {
 /* text section CSS*/
 
 .title {
-    margin: 0 5% 5% 5%;
+    margin: 0 5% 3% 5%;
     line-height: 0.6
 }
 
@@ -93,12 +93,12 @@ span {
 
 .sm-text {
     font-weight: 300;
-    font-size: small;
+    font-size:medium;
 }
 
 @media all and (max-width: 767px) {
     .title{
-        margin-bottom: 10%;
+        margin-bottom: 40px;
     }
     .lg-text {
         font-size:x-large;
@@ -111,47 +111,52 @@ span {
 
 /* search bar CSS*/
 
-.search-bar {
-    position: relative;
-    margin: 0% 5% 5% 5%;
-    border: transparent;
-}
+.search-bar {   
+    position: relative; 
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px;
+    display: inline-flex;
+    margin: 0% 5% 3% 5%;
 
-.search-bar-contents {    border-radius: 15px;
-    position: absolute;
-    display: flex;
 }
 
 .search-bar-icon {
-    padding: 5% 6%;
+    padding: 4% 5%;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
 }
 
 .search-bar-input {
-    border: 1px #F2F2F2 solid;
+    border: none;
     outline: none;
     padding: 0% 5%;
+    width: 400px;
     font-weight: 600;
+    font-size: large;
+    margin-right: 23%;
 }
- .search-bar-input::placeholder {
+
+.search-bar-input::placeholder {
     color: black;
+    font-size: large;
     font-weight: 600;
     opacity: 1;
- }
+}
 
 .search-bar-bg-button {
     border: none;
     background-color: #0065FC;
     color: white;
+    font-size: large;
     font-weight: 600;
-    padding: 0% 5%;
+    padding: 4% 5%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    position: relative;
-    right: 10px;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+
 }
 
 .search-bar-sm-button{
@@ -160,12 +165,19 @@ span {
 
 @media all and (max-width: 767px) {
 
-    .search-bar-contents {
-        width: 100%;
+    .search-bar {
+        display: flex;
+        margin: 0% 5% 8% 5%;
+    }
+
+    .search-bar-icon {
+        padding: 5% 5%;
     }
 
     .search-bar-input {
-        width: 100%;
+    width: 100%;
+    padding: 0% 5%;
+    margin-right: 10%;
     }
 
     .search-bar-bg-button {
@@ -177,10 +189,128 @@ span {
         border: none;
         background-color: #0065FC;
         color: white;
-        font-weight: 600;
-        padding: 0% 5%;
+        padding: 5.3% 5%;
         border-radius: 15px;
-        position: relative;
-        right: 10px;
+        position: absolute;
+        right: -1px;
+        bottom: -1px;
+    }
+}
+
+/* Filters CSS */
+
+.filters-section {
+    margin: 0% 5% 3% 5%;
+    display: flex;
+    align-items: center;
+}
+
+.filters-text {
+    margin: 0% 2% 10px 0%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.filters {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.all-filters {
+    border: 2px #d6d6d6 solid;
+    display: inline-flex;
+    border-radius: 50px;
+    justify-content: right;
+    height: 50px;
+    align-items: center;
+    margin: 0px 10px 10px 0px;
+}
+
+#filter-1 {
+    width: 151px; 
+}
+
+#filter-2 {
+    width: 198px;
+}
+
+#filter-3 {
+    width: 156px;
+}
+
+#filter-4 {
+    width: 181px;
+}
+
+.filter-icon-section {
+    background-color:#DEEBFF; 
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-text {
+    padding-right: 20px;
+    padding-left: 12px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+@media all and (max-width: 767px){
+
+    .filters-section {
+        display: block;
+    }
+
+    .filters-text {
+        margin: 0% 0% 20px 0%;
+    }
+
+    #filter-1 {
+        order: 0;
+    }
+    #filter-2 {
+        order: 2;
+    }
+    #filter-3 {
+        order: 1;
+    }
+    #filter-4 {
+        order: 3;
+    }
+
+}
+
+/*Info text*/
+.info-section {
+    display: inline-flex;
+    margin: 0% 5% 3% 5%;
+    gap: 10px;
+}
+
+#info-icon {
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #d6d6d6 solid;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.info-text {
+    display: flex;
+    width: 400px;
+    font-weight: 300;
+    font-size: medium;
+}
+
+@media all and (max-width: 767px){
+    .info-text {
+        width: 100%;
     }
 }
