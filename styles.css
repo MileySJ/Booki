@@ -357,9 +357,9 @@ header {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    width: 75%;
-    justify-content: space-around;
+    width: 66.66%;
     padding: 2%;
+    row-gap: 20px;
 }
 
 
@@ -378,12 +378,13 @@ header {
 
 .accommodations-cards-row {
     display: flex;
-    gap: 4%;
-    margin-bottom: 3%;
+    flex-direction: row;
+    gap: 3%;
     
 }
 
 .accommodations a {
+    display: flex;
     text-decoration: none;
     color: black;
     height: 100%;
@@ -403,7 +404,7 @@ header {
     box-shadow: 0px 2px 10px #0065FC
 }
 
-.accommodations-card:hover  .card-title {
+.accommodations-card:hover .card-title {
     color: #0065FC;
 }
 .accommodation-img-container {
@@ -426,7 +427,6 @@ header {
 }
 
 .accommodations-card-details {
-    border: red solid;
     display: flex;
     flex-direction: column;
     padding: 0% 3%;
@@ -436,22 +436,21 @@ header {
     font-size: small;
 }
 
-
-
 /* popular section*/
 
 .popular {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 25%;
+    width: 33.33%;
     display: flex;
     flex-direction: column;
     padding: 2%;
+    gap: 20px;
 }
 
 .popular-cards-row {
+    display: flex ; 
     height: 100%;
-    display: flex ;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -480,7 +479,6 @@ header {
 }
 
 .popular-img-container {
-    border: black solid;
     width: 40%; 
     border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px; 
@@ -488,7 +486,6 @@ header {
 }
 
 .popular-image {
-    border: yellow solid;
     padding: 0; 
     margin: 0;
     width: 100%; 
@@ -497,7 +494,6 @@ header {
 }
 
 .popular-card-details {
-    border: red solid;
     display: flex;
     width: 60%;
     flex-direction: column;
@@ -505,20 +501,16 @@ header {
 }
 
 .popular-details-text {
-    border: green solid;
-
     line-height: 1.2; 
     font-size: small; 
 }
 
 .popular-rating {
-    border: yellowgreen solid;
-
     display: inline-flex;
     margin-top: auto;
 }
 
-.sm-price {
+.sm-price { 
     display: none;
 }
 
@@ -530,7 +522,9 @@ header {
     .popular {
         display: flex;
         width: 100%;
-        background-color: transparent;  
+        background-color: transparent;
+        padding: 0;
+        padding-bottom: 2%;
     }
     .popular-cards-row {
         flex-direction: row;
@@ -550,16 +544,23 @@ header {
 @media all and (max-width: 767px) {
     .accommodations-section {
         flex-direction: column-reverse;
-        gap: 0%;
         margin: 0;
+        gap: 0%;
     }
     .popular {
-        display: flex;
         width: 100%;
         border-radius: 0;
         padding: 5%;
     }
-
+    .accommodations {
+        padding: 0% 5%;
+        width: 100%;
+        background-color: transparent;
+    }
+    .accommodations-cards-row {
+        flex-direction: column;
+        gap: 20px;
+    }
     .content-section-title{
         font-size: larger;
     }
@@ -571,23 +572,9 @@ header {
     .popular-cards-row a {
         margin-bottom: 3%;
     }
-    .popular-img-container {
-        min-width: 150px; 
 
-    }
-    .accommodations {
-        padding: 5%;
-        width: 100%;
-        background-color: transparent;
-    }
 
-    .accommodations-cards-row {
-        flex-direction: column;
-    }
 
-    .accommodations-cards-row a {
-        margin-bottom: 3%;
-    }
 
     .bg-price {
         display: none;
@@ -598,6 +585,10 @@ header {
     }
 
 }
+
+/* Activities section*/
+
+
 /* Footer*/
 
 footer {
