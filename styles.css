@@ -425,7 +425,7 @@ header {
     font-weight: 600;
 }
 
-.card-details {
+.accommodations-card-details {
     border: red solid;
     display: flex;
     flex-direction: column;
@@ -481,7 +481,7 @@ header {
 
 .popular-img-container {
     border: black solid;
-    width: 200px; 
+    width: 40%; 
     border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px; 
     overflow: hidden;
@@ -496,6 +496,14 @@ header {
     object-fit: cover;
 }
 
+.popular-card-details {
+    border: red solid;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    padding: 0% 3%;
+}
+
 .popular-details-text {
     border: green solid;
 
@@ -508,6 +516,10 @@ header {
 
     display: inline-flex;
     margin-top: auto;
+}
+
+.sm-price {
+    display: none;
 }
 
 @media all and (max-width: 992px) and (min-width: 768px) {
@@ -575,6 +587,14 @@ header {
 
     .accommodations-cards-row a {
         margin-bottom: 3%;
+    }
+
+    .bg-price {
+        display: none;
+    }
+
+    .sm-price {
+        display: inline;
     }
 
 }
