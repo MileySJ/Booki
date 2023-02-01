@@ -54,7 +54,6 @@ header {
     width: 45%;
 }
 
-
 /* text section*/
 
 .title {
@@ -73,8 +72,6 @@ header {
     font-weight: 300;
     font-size: medium;
 }
-
-
 
 /* search bar*/
 
@@ -123,14 +120,11 @@ header {
     position: absolute;
     right: -1px;
     bottom: -1px;
-
 }
 
 .search-bar-sm-button {
     display: none;
 }
-
-
 
 /* Filters*/
 
@@ -200,22 +194,18 @@ header {
 .all-filters:hover>.filter-icon-section {
     transform: rotate(360deg);
     transition: transform 1s;
-
 }
 
 .all-filters i {
     color: #0065FC;
 }
 
-
 .filter-text {
     padding-right: 20px;
     padding-left: 12px;
     white-space: nowrap;
     font-weight: 600;
-
 }
-
 
 /*Info text*/
 .info-section {
@@ -242,8 +232,6 @@ header {
     font-size: medium;
 }
 
-
-
 /* Accommodation section*/
 
 .accommodations-section {
@@ -263,7 +251,6 @@ header {
     row-gap: 20px;
 }
 
-
 .content-section-title {
     display: flex;
     align-items: center;
@@ -281,7 +268,6 @@ header {
     display: flex;
     flex-direction: row;
     gap: 3%;
-
 }
 
 .accommodations a {
@@ -414,8 +400,6 @@ header {
     display: none;
 }
 
-
-
 /* Activities section*/
 .activities {
     margin: 0 3% 3% 3%;
@@ -459,7 +443,6 @@ header {
     text-decoration: none;
     color: black;
 }
-
 
 .activities-card {
     width: 100%;
@@ -509,8 +492,6 @@ header {
     color: #0065FC;
 }
 
-
-
 /* Footer*/
 
 footer {
@@ -541,7 +522,6 @@ footer {
 }
 
 /* Media queries - Tablet */
-
 
 @media all and (max-width: 992px) and (min-width: 768px) {
     /* popular section*/
