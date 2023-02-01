@@ -54,41 +54,6 @@ header {
     width: 45%;
 }
 
-@media all and (max-width: 767px) {
-    body {
-        margin: 0;
-    }
-
-    header {
-        display: block;
-        margin: 0 0 7% 0;
-    }
-
-    .nav {
-        justify-content: center;
-    }
-
-    .nav-links {
-        border-bottom: 3px #F2F2F2 solid;
-        width: 100%;
-        justify-content: center;
-        padding: 3%;
-    }
-
-    .nav-links:hover {
-        border-bottom: 3px #0065FC solid;
-        border-top: none;
-        color: #0065FC;
-    }
-
-    .logo {
-        justify-content: center;
-    }
-
-    .logo-image {
-        width: 25%;
-    }
-}
 
 /* text section*/
 
@@ -109,20 +74,7 @@ header {
     font-size: medium;
 }
 
-@media all and (max-width: 767px) {
-    .title {
-        margin-bottom: 40px;
-    }
 
-    .lg-text {
-        font-size: x-large;
-        font-weight: 600;
-    }
-
-    .sm-text {
-        font-weight: 300;
-    }
-}
 
 /* search bar*/
 
@@ -178,40 +130,7 @@ header {
     display: none;
 }
 
-@media all and (max-width: 767px) {
 
-    .search-bar {
-        display: flex;
-        max-width: 100%;
-        margin: 0 5% 8% 5%;
-    }
-
-    .search-bar-icon {
-        padding: 5% 5%;
-    }
-
-    .search-bar-input {
-        width: 100%;
-        padding: 0 5%;
-        margin-right: 10%;
-    }
-
-    .search-bar-bg-button {
-        display: none;
-    }
-
-    .search-bar-sm-button {
-        display: block;
-        border: none;
-        background-color: #0065FC;
-        color: white;
-        padding: 5.3% 5%;
-        border-radius: 15px;
-        position: absolute;
-        right: -1px;
-        bottom: -1px;
-    }
-}
 
 /* Filters*/
 
@@ -297,33 +216,6 @@ header {
 
 }
 
-@media all and (max-width: 767px) {
-
-    .filters-section {
-        display: block;
-    }
-
-    .filters-text {
-        margin: 0 0 20px 0;
-    }
-
-    #filter-1 {
-        order: 0;
-    }
-
-    #filter-2 {
-        order: 2;
-    }
-
-    #filter-3 {
-        order: 1;
-    }
-
-    #filter-4 {
-        order: 3;
-    }
-
-}
 
 /*Info text*/
 .info-section {
@@ -350,15 +242,7 @@ header {
     font-size: medium;
 }
 
-@media all and (max-width: 767px) {
-    .info-section {
-        margin-bottom: 10%;
-    }
 
-    .info-text {
-        width: 100%;
-    }
-}
 
 /* Accommodation section*/
 
@@ -530,82 +414,7 @@ header {
     display: none;
 }
 
-@media all and (max-width: 992px) and (min-width: 768px) {
-    .accommodations-section {
-        flex-direction: column-reverse;
-        gap: 0;
-    }
 
-    .popular {
-        display: flex;
-        width: 100%;
-        background-color: transparent;
-        padding: 0;
-        padding-bottom: 2%;
-    }
-
-    .popular-cards-row {
-        flex-direction: row;
-        gap: 3%;
-
-    }
-
-    .popular-card {
-        max-width: 250px;
-    }
-
-    .accommodations {
-        width: 100%;
-    }
-
-}
-
-@media all and (max-width: 767px) {
-    .accommodations-section {
-        flex-direction: column-reverse;
-        margin: 0;
-        gap: 0;
-    }
-
-    .popular {
-        width: 100%;
-        border-radius: 0;
-        padding: 3%;
-    }
-
-    .accommodations {
-        padding: 0 3%;
-        width: 100%;
-        background-color: transparent;
-    }
-
-    .accommodations-cards-row {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .content-section-title {
-        font-size: x-large;
-        font-weight: 600;
-    }
-
-    .show-more {
-        font-size: large;
-    }
-
-    .popular-cards-row a {
-        margin-bottom: 3%;
-    }
-
-    .bg-price {
-        display: none;
-    }
-
-    .sm-price {
-        display: inline;
-    }
-
-}
 
 /* Activities section*/
 .activities {
@@ -700,37 +509,7 @@ header {
     color: #0065FC;
 }
 
-@media all and (max-width: 767px) {
-    .activities {
-        margin-bottom: 10%;
-    }
 
-    .activities-section {
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .activity-card-container {
-        width: 100%;
-    }
-
-    .activity-two-cards-container {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .activities-card {
-        height: 200px;
-    }
-
-    .activity-img-container {
-        height: 150px;
-    }
-
-    #port #dame #fort #island #park {
-        height: 150px;
-    }
-}
 
 /* Footer*/
 
@@ -761,7 +540,244 @@ footer {
     color: black;
 }
 
+/* Media queries - Tablet */
+
+
+@media all and (max-width: 992px) and (min-width: 768px) {
+    /* popular section*/
+    
+    .accommodations-section {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .popular {
+        display: flex;
+        width: 100%;
+        background-color: transparent;
+        padding: 0;
+        padding-bottom: 2%;
+    }
+
+    .popular-cards-row {
+        flex-direction: row;
+        gap: 3%;
+
+    }
+
+    .popular-card {
+        max-width: 250px;
+    }
+
+    .accommodations {
+        width: 100%;
+    }
+
+}
+
+/* Media queries - Mobile */
+
 @media all and (max-width: 767px) {
+
+    /* header*/
+    body {
+        margin: 0;
+    }
+
+    header {
+        display: block;
+        margin: 0 0 7% 0;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-links {
+        border-bottom: 3px #F2F2F2 solid;
+        width: 100%;
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .nav-links:hover {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+        color: #0065FC;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo-image {
+        width: 25%;
+    }
+
+    /* text section */
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .lg-text {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .sm-text {
+        font-weight: 300;
+    }
+
+    /* search bar */
+
+    .search-bar {
+        display: flex;
+        max-width: 100%;
+        margin: 0 5% 8% 5%;
+    }
+
+    .search-bar-icon {
+        padding: 5% 5%;
+    }
+
+    .search-bar-input {
+        width: 100%;
+        padding: 0 5%;
+        margin-right: 10%;
+    }
+
+    .search-bar-bg-button {
+        display: none;
+    }
+
+    .search-bar-sm-button {
+        display: block;
+        border: none;
+        background-color: #0065FC;
+        color: white;
+        padding: 5.3% 5%;
+        border-radius: 15px;
+        position: absolute;
+        right: -1px;
+        bottom: -1px;
+    }
+
+    /* Filters */
+
+    .filters-section {
+        display: block;
+    }
+
+    .filters-text {
+        margin: 0 0 20px 0;
+    }
+
+    #filter-1 {
+        order: 0;
+    }
+
+    #filter-2 {
+        order: 2;
+    }
+
+    #filter-3 {
+        order: 1;
+    }
+
+    #filter-4 {
+        order: 3;
+    }
+    /* Info text */
+
+    .info-section {
+        margin-bottom: 10%;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+
+    /* Accommodation section*/
+
+    .accommodations-section {
+        flex-direction: column-reverse;
+        margin: 0;
+        gap: 0;
+    }
+
+    .popular {
+        width: 100%;
+        border-radius: 0;
+        padding: 3%;
+    }
+
+    .accommodations {
+        padding: 0 3%;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .accommodations-cards-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content-section-title {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .show-more {
+        font-size: large;
+    }
+
+    .popular-cards-row a {
+        margin-bottom: 3%;
+    }
+
+    .bg-price {
+        display: none;
+    }
+
+    .sm-price {
+        display: inline;
+    }
+
+    /* Activities section*/
+
+    .activities {
+        margin-bottom: 10%;
+    }
+
+    .activities-section {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .activity-card-container {
+        width: 100%;
+    }
+
+    .activity-two-cards-container {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .activities-card {
+        height: 200px;
+    }
+
+    .activity-img-container {
+        height: 150px;
+    }
+
+    #port #dame #fort #island #park {
+        height: 150px;
+    }
+
+    /* Footer*/
+
     footer {
         display: block;
     }
@@ -770,7 +786,3 @@ footer {
         margin-bottom: 10%;
     }
 }
-
-
-/* testing second activities*/
-
