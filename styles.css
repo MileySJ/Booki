@@ -549,10 +549,10 @@ header {
     .popular {
         width: 100%;
         border-radius: 0;
-        padding: 5%;
+        padding: 3%;
     }
     .accommodations {
-        padding: 0% 5%;
+        padding: 0% 3%;
         width: 100%;
         background-color: transparent;
     }
@@ -682,6 +682,7 @@ header {
 
     .activity-two-cards-container {
         width: 100%;
+        gap: 20px;
     }
 
     .activities-card {
