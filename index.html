@@ -25,20 +25,20 @@
         <div class="logo">
             <img class="logo-image" src="images/logo/Booki.png" alt="booki's logo" title="booki's logo">
         </div>
-        <div class="nav">
+        <nav class="nav">
             <a class="nav-links" href="#accommodations-section"><span class="nav-span">Accommodations</span></a>
             <a class="nav-links" href="#activities"><span class="nav-span">Activities</span></a>
-        </div>
+        </nav>
     </header>
 
     <!-- text section -->
-    <div class="title">
+    <section class="title">
         <p class="lg-text">Find a place for your dream vacation</p>
         <p class="sm-text">Downtown or in nature</p>
-    </div>
+    </section>
 
     <!-- search bar -->
-    <div class="search-bar">
+    <section class="search-bar">
         <div class="search-bar-icon">
             <i class="fa-sharp fa-solid fa-location-dot"></i>
         </div>
@@ -47,10 +47,10 @@
 
         <button class="search-bar-bg-button">Search</button>
         <button class="search-bar-sm-button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-    </div>
+    </section>
 
     <!-- Filters -->
-    <div class="filters-section">
+    <section class="filters-section">
 
         <!--filter title-->
         <div class="filters-text">
@@ -114,10 +114,10 @@
 
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Info text-->
-    <div class="info-section">
+    <section class="info-section">
 
         <div>
             <i id="info-icon" class="fa-solid fa-info fa-sm"></i>
@@ -126,11 +126,14 @@
         <div class="info-text">
             <span>More than 500 accommodations are available in this city</span>
         </div>
-    </div>
+    </section>
+
+<main>
 
     <!--accommodations section-->
-    <div id="accommodations-section" class="accommodations-section">
-        <div class="accommodations">
+    <section id="accommodations-section" class="accommodations-section">
+        <!-- accommodations -->
+        <section class="accommodations">
             <div class="content-section-title">
                 <p>Accommodations in Marseille</p>
             </div>
@@ -276,11 +279,11 @@
                     <p>Show more</p>
                 </a>
             </div>
-        </div>
+        </section>
 
 
-        <!-- popular section-->
-        <div class="popular">
+        <!-- popular -->
+        <section class="popular">
             <div class="content-section-title">
                 <p>Most Popular</p>
                 <i class="fa-solid fa-star"></i>
@@ -359,11 +362,11 @@
                 </a>
 
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
 
     <!--Activities-->
-    <div id="activities" class="activities">
+    <section id="activities" class="activities">
         <div class="content-section-title">
             <p>Activities in Marseille</p>
         </div>
@@ -435,73 +438,10 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <!--testing second activities-->
-        <div class="a" style="height: 300px; display: flex; display: none ; flex-direction: column; flex-wrap: wrap;
-         max-width: 100%; margin: 3%;">
-            <div class="activity-card-container" style="height: 100%; width: 25%; border: blue ;">
-                <a href="#/">
-                    <div class="activities-card">
-                        <div class="activity-img-container" style="height: 85%;">
-                            <img class="image" src="images/activities/oldport.jpg" alt="Old port" title="Old port">
-                        </div>
-                        <p class=" activities-title"> 1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="activity-card-container" style="height: 55%; margin-bottom: auto; border: blue ; padding-left: 15px; ">
-                <a href="#/">
-                    <div class="activities-card">
-                        <div class="activity-img-container " style="height: 75%;">
-                            <img class="image" src="images/activities/pomegues.jpg" alt="Old port" title="Old port">
-                        </div>
-                        <p class=" activities-title"> 2</p>
-                    </div>
-                </a>
-            </div>
-            <div class="activity-card-container" style="height: 40%; border: blue ; padding-left: 15px">
-                <a href="#/">
-                    <div class="activities-card">
-                        <div class="activity-img-container" style="height: 65%;">
-                            <img class="image" src="images/activities/frioul.jpg" alt="Old port" title="Old port">
-                        </div>
-                        <p class=" activities-title"> 3</p>
-                    </div>
-                </a>
-            </div>
-            <div class="activity-card-container" style="height: 100%; border: blue ; padding-left: 15px">
-                <a href="#/">
-                    <div class="activities-card">
-                        <div class="activity-img-container" style="height: 85%;">
-                            <img class="image" src="images/activities/nationalpark.jpg" alt="Old port" title="Old port">
-                        </div>
-                        <p class=" activities-title"> 4</p>
-                    </div>
-                </a>
-            </div>
-            <div class="activity-card-container" style="height: 50%; border: blue ; margin-bottom: auto; padding-left: 15px">
-                <a href="#/">
-                    <div class="activities-card">
-                        <div class="activity-img-container" style="height: 70%;">
-                            <img class="image" src="images/activities/notredame.jpg" alt="Old port" title="Old port">
-                        </div>
-                        <p class=" activities-title"> 5</p>
-                    </div>
-                </a>
-            </div>
-            <div class="activity-card-container" style="height: 45%;border: blue ; padding-left: 15px ">
-                <a href="#/">
-                    <div class="activities-card">
-                        <div class="activity-img-container" style="height: 70%;">
-                            <img class="image" src="images/activities/longchamp.jpg" alt="Old port" title="Old port">
-                        </div>
-                        <p class=" activities-title"> 6</p>
-                    </div>
-                </a>
-            </div>
+</main>
 
-        </div>
     <!-- Footer-->
     <footer>
 
@@ -531,6 +471,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>
